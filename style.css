@@ -1,0 +1,141 @@
+/* ============================
+   GLOBAL THEME (LIGHT + DARK)
+   USF Green & Gold
+   ============================ */
+
+:root {
+  --usf-green: #006747;
+  --usf-gold: #CFC493;
+
+  /* Light mode */
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --card-bg: #f7f7f7;
+  --border: #e0e0e0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --text: #f2f2f2;
+    --card-bg: #2a2a2a;
+    --border: #3a3a3a;
+  }
+}
+
+/* ============================
+   BASE STYLES
+   ============================ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--usf-green);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* ============================
+   HEADINGS
+   ============================ */
+
+h1, h2, h3 {
+  color: var(--usf-green);
+  margin-top: 0;
+}
+
+h1 {
+  border-bottom: 3px solid var(--usf-gold);
+  padding-bottom: 0.3rem;
+}
+
+/* ============================
+   PROJECT CARDS
+   ============================ */
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ============================
+   BUTTONS
+   ============================ */
+
+button, .btn {
+  background: var(--usf-green);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+button:hover, .btn:hover {
+  background: var(--usf-gold);
+  color: #1a1a1a;
+}
+
+/* ============================
+   CONTACT PAGE
+   ============================ */
+
+.contact-info a {
+  color: var(--usf-green);
+  font-weight: 600;
+}
+
+.contact-info a:hover {
+  color: var(--usf-gold);
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text);
+  opacity: 0.7;
+}
