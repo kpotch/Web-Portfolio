@@ -334,6 +334,46 @@ p { margin: 0 0 1.1em; }
 .placeholder-card { border: 2px dashed var(--line); border-top: 2px dashed var(--line); background: transparent; justify-content: center; text-align: center; }
 .placeholder-card p { color: var(--ink-faint); font-style: italic; }
 
+.project-shot {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #fff;
+}
+.project-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.3rem; font-size: 0.9rem; }
+.category-heading {
+  margin-top: 3rem;
+  padding-top: 0.5rem;
+}
+.category-heading:first-of-type { margin-top: 0; }
+.category-sub { color: var(--ink-faint); font-size: 0.95rem; margin-top: -0.5rem; }
+.tableau-pending {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  border: 1.5px dashed var(--line);
+  border-radius: 3px;
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+.tableau-embed { width: 100%; }
+.tableau-embed iframe { width: 100%; height: 320px; border: 1px solid var(--line); border-radius: 3px; }
+
+.file-list { list-style: none; padding: 0; margin: 0.3rem 0 0.8rem; }
+.file-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.file-list li:last-child { border-bottom: none; }
+.file-list strong { color: var(--ink); }
+.file-list a { font-size: 0.85rem; white-space: nowrap; margin-left: 0.5rem; }
+
 /* ---------- Reflections ---------- */
 .reflections article {
   background: #fff;
